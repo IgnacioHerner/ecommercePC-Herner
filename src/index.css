@@ -1,3 +1,16 @@
 body {
     font-family: 'Open Sans', sans-serif;
-}   
+}
+
+.material-symbols-outlined {
+    color: white;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 100,
+    'GRAD' 200,
+    'opsz' 48;
+    font-size: 42px;
+    
+    
+}
+
