@@ -5,7 +5,7 @@ export const products = [
         price: 200,
         stock: 10,
         category: 'Ram',
-        img: 'https://i.postimg.cc/mr0kqxMz/memoria-ram-hyperx.jpg'
+        img: 'https://lezamapc.com.ar/17768-large_default/memoria-hyperx-fury-black-ddr4-3200-c18-8gb-kingston.jpg'
 
     },
     {
@@ -14,7 +14,7 @@ export const products = [
         price: 300,
         stock: 20,
         category: 'Ram',
-        img: 'https://i.postimg.cc/RFKhxPQP/memoria-ram-gigabyte.png'
+        img: 'https://www.venex.com.ar/products_images/1651252924_ukik.png'
 
     },
     {
@@ -24,6 +24,15 @@ export const products = [
         stock: 7,
         category: 'Ram',
         img: 'https://i.postimg.cc/zfL30DLY/memoria-ram-corsair.jpg'
+
+    },
+    {
+        id: 4,
+        title: 'Memoria Ram Generica',
+        price: 100,
+        stock: 30,
+        category: 'Ram',
+        img: 'https://s3-sa-east-1.amazonaws.com/saasargentina/TNsYjD2GXXnaxHp96erf/imagen'
 
     }
 ];

@@ -1,16 +1,17 @@
 import React from 'react'
-import ItemCount from '../Count/ItemCount'
+import style from './Item.module.css'
 
 
-const Item = ({item}) => {
+const Item = ({title, price, img, stock, onAdd}) => {
   return (
-    <div id={item.id}>
+    <div className={style.card_container}>
       <div>
-        <img src={item.img} alt={item.title} />
-        <h2>{item.title}</h2>
-        <p>${item.price}</p>
-        <p>{item.stock}</p>
-        <ItemCount stock={10}/>
+        <img className={style.img} src={img} alt={title} />
+        <h2 className={style.h2}>{title}</h2>
+        <p className={style.price}>${price}</p>
+        <p className={style.stock}>Stock: {stock}</p>
+        <button className={style.btn_carrito} onClick={onAdd}>Agregar al carrito</button>
+
       </div>
     </div>
   )
