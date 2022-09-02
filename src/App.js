@@ -1,6 +1,6 @@
 import Navbar from "./components/Nav/Navbar";
-import ItemListContainer from "./components/ItemList/ItemListContainer";
-import ItemCount from "./components/ItemCount/ItemCount";
+import ItemListContainer from "./components/ItemListCointainer/ItemListContainer";
+import ItemCount from "./components/Count/ItemCount";
 
 const App = () => {
 
@@ -11,7 +11,7 @@ const App = () => {
     return(
         <>
             <Navbar/>
-            <ItemListContainer saludo = "Hola Fede!"/>
+            <ItemListContainer />
             <ItemCount stock ={10} initial={1} onAdd={onAdd}/>
         </>
     );
