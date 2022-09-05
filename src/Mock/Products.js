@@ -35,4 +35,6 @@ export const products = [
         img: 'https://s3-sa-east-1.amazonaws.com/saasargentina/TNsYjD2GXXnaxHp96erf/imagen'
 
     }
+
+
 ];
