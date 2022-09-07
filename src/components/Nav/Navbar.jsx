@@ -1,19 +1,28 @@
 import CartWidget from './CartWidget';
 import style from './Navbar.module.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <nav className={style.NavContainer}>
-        <h2 className={style.h2_ContainerNav}>House <span className={style.span_ContainerNav}>Bit</span> </h2>
+
+        <Link className={style.txt_none} to="/">
+          <h1 className={style.h1_ContainerNav}>House <span className={style.span_ContainerNav}>Bit</span> </h1>
+        </Link>
+        
         <div>
-          <a className={style.a_ContainerNav} href="/">Home</a>
-          <a className={style.a_ContainerNav} href="/">Shop</a>
-          <a className={style.a_ContainerNav} href="/">About</a>
-          <a className={style.a_ContainerNav} href="/">Contact</a>
+          <Link className={style.a_ContainerNav} to="/category/ram">Memorias Ram</Link>
+          <Link className={style.a_ContainerNav} to="/">Home</Link>
+          <Link className={style.a_ContainerNav} to="/">Shop</Link>
+          <Link className={style.a_ContainerNav} to="/">About</Link>
+          <Link className={style.a_ContainerNav} to="/">Contact</Link>
         </div>
-        <CartWidget />
+        <Link to="/cart">
+          <CartWidget />
+        </Link>
+
     </nav>
   )
 }
 
-export default Navbar;
+export default Navbar;  

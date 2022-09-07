@@ -1,10 +1,12 @@
-.h2_ContainerNav{
+.h1_ContainerNav{
     color: white;
     font-weight: 200;
+    text-decoration: none;
 }
 
 .span_ContainerNav{
     font-weight: bold;
+    text-decoration: none;
 }
 
 .NavContainer {
@@ -19,4 +21,8 @@
     color: white;
     text-decoration: none;
     margin-right: 1rem;
+}
+
+.txt_none {
+    text-decoration: none;
 }

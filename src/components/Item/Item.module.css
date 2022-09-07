@@ -7,14 +7,19 @@
     padding: 20px;
 }
 
+.txt_none{
+    text-decoration: none;
+}
+
 .card_container:hover{
-    border: 2px solid rgb(159, 159, 159);
+    box-shadow: 3px 3px 15px 1px rgb(98, 98, 98);
 
 }
 .price {
     padding-top: 20%;
     color: rgb(25,163,25);
     font-weight: 600;
+    text-decoration: none;
 
 }
 .img {

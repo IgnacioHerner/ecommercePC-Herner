@@ -19,6 +19,9 @@ body {
     'opsz' 48;
     font-size: 42px;
     
-    
+}
+
+.active {
+    color: red;
 }
 
