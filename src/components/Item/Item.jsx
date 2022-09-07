@@ -3,7 +3,7 @@ import style from './Item.module.css'
 import { Link } from 'react-router-dom'
 
 
-const Item = ({title, price, img, stock,id}) => {
+const Item = ({item}) => {
 
   const onAdd = () => {
     console.log("Este boton sirve para agregar al carrito")
@@ -11,12 +11,12 @@ const Item = ({title, price, img, stock,id}) => {
   
   return (
     <div className={style.card_container}>
-      <Link className={style.txt_none} to={`/item/${id}`}>
+      <Link className={style.txt_none} to={`/detail/${item.id}`}>
         <div>
-          <img className={style.img} src={img} alt={title} />
-          <h2 className={style.h2}>{title}</h2>
-          <p className={style.price}>${price}</p>
-          <p className={style.stock}>Stock: {stock}</p>
+          <img className={style.img} src={item.img} alt={item.title} />
+          <h2 className={style.h2}>{item.title}</h2>
+          <p className={style.price}>${item.price}</p>
+          <p className={style.stock}>Stock: {item.stock}</p>
           <button className={style.btn_carrito} onClick={onAdd}>Agregar al carrito</button>
         </div>
       </Link>

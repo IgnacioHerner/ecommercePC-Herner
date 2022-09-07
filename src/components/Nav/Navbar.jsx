@@ -12,10 +12,12 @@ const Navbar = () => {
         
         <div>
           <Link className={style.a_ContainerNav} to="/category/ram">Memorias Ram</Link>
+          <Link className={style.a_ContainerNav} to="/category/placa_de_video">Placas de video</Link>
+          <Link className={style.a_ContainerNav} to="/category/motherboard">Motherboards</Link>
           <Link className={style.a_ContainerNav} to="/">Home</Link>
-          <Link className={style.a_ContainerNav} to="/">Shop</Link>
+          {/* <Link className={style.a_ContainerNav} to="/">Shop</Link>
           <Link className={style.a_ContainerNav} to="/">About</Link>
-          <Link className={style.a_ContainerNav} to="/">Contact</Link>
+          <Link className={style.a_ContainerNav} to="/">Contact</Link> */}
         </div>
         <Link to="/cart">
           <CartWidget />

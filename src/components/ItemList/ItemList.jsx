@@ -7,12 +7,14 @@ const ItemList = ({items}) => {
 
   return (
     <div className={style.container}>
-      {
-        items.map(item => <Item key={item.id} img={item.img} title={item.title} stock={item.stock} price={item.price} />)
-      }
+            {items.map((item) => {
+                return <Item key={item.id} item={item} img={item.img} title={item.title} stock={item.stock} price={item.price} />;
+            })}
     </div>
 
   )
 }
 
 export default ItemList
+
+// items.map(item => <Item key={item.id} img={item.img} title={item.title} stock={item.stock} price={item.price} />)
