@@ -17,4 +17,3 @@ const ItemList = ({items}) => {
 
 export default ItemList
 
-// items.map(item => <Item key={item.id} img={item.img} title={item.title} stock={item.stock} price={item.price} />)

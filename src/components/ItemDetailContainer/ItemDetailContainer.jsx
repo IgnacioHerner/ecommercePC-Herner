@@ -7,8 +7,6 @@ import { useParams } from 'react-router-dom'
 const ItemDetailContainer = () => {
     const[item, setItem] = useState({})
 
-    const parametro = useParams();
-    console.log(parametro)
     const {idProd} = useParams();
     const idProdNum = Number(idProd)
 

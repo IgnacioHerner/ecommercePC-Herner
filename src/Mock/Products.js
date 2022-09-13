@@ -1,7 +1,7 @@
 export const products = [
     {
         id: 1,
-        title: 'Memoria Ram HyperX',
+        title: 'Memoria RAM Kingston Hyperx Fury 8gb Rgb Ddr4 3600mz Kingston',
         price: 200,
         stock: 10,
         category: 'ram',
@@ -10,7 +10,7 @@ export const products = [
     },
     {
         id: 2,
-        title: 'Memoria Ram Gigabyte',
+        title: 'Memoria RAM Gigabyte Aorus 8gb Rgb Ddr4 3733mhz Gamer Demod',
         price: 300,
         stock: 20,
         category: 'ram',
@@ -19,7 +19,7 @@ export const products = [
     },
     {
         id: 3,
-        title: 'Memoria Ram Corsair',
+        title: 'Memoria RAM Vengeance RGB Pro gamer color negro 8GB Corsair',
         price: 250,
         stock: 7,
         category: 'ram',
@@ -28,29 +28,47 @@ export const products = [
     },
     {
         id: 4,
-        title: 'Memoria Ram Generica',
+        title: 'Memoria RAM Fury Beast DDR4 gamer color negro 8GB 1 Kingston',
         price: 100,
         stock: 30,
         category: 'ram',
-        img: 'https://s3-sa-east-1.amazonaws.com/saasargentina/TNsYjD2GXXnaxHp96erf/imagen'
+        img: 'https://cf.shopee.com.ar/file/e423f0b82a6f966236bf6cf6b10ea5d3'
 
     },
     {
         id: 5,
-        title: 'Mother ASUS ROG STRIX Z690',
+        title: 'Motherboard Asus Rog Strix Z690-e Gaming Lga 1700 Intel 12th',
         price: 2500,
         stock: 5,
         category: 'motherboard',
-        img: 'https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_30435_Mother_ASUS_ROG_STRIX_Z690-F_GAMING_WIFI_S1700_cf80bb79-grn.jpg'
+        img: 'https://compraloencuotas.com.ar/aplicacion_agro_filedata/siga_webturismo/ecommerce_pictures/4206/degoogle.jpg'
 
     },
     {
         id: 6,
-        title: 'Placa de Video ASUS GeForce RTX 3090 24GB GDDR6X ROG STRIX GAMING OC',
+        title: 'Placa de video Nvidia Gigabyte GeForce GTX 16 Series GTX 1660 OC Edition 6GB',
+        price: 500,
+        stock: 10,
+        category: 'placa_de_video',
+        img: 'https://www.digitarinformatica.com.ar/wp-content/uploads/2022/04/Placa-de-video-Gigabyte-GTX-1660-6GB-GDDR6-Super-OC-1-600x600.jpg'
+
+    },
+    {
+        id: 7,
+        title: 'Placa de video Nvidia MSI Ventus GeForce RTX 30 Series RTX 3060 Ti GEFORCE RTX 3060 TI',
+        price: 1500,
+        stock: 80,
+        category: 'placa_de_video',
+        img: 'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/video-geforce-rtx-3060-ti-8gb-msi-ventus-3x-lhr-0.jpg'
+
+    },
+    {
+        id: 8,
+        title: 'Placa De Video Asus Rog Strix Geforce Rtx 3090 24g Oc Gaming',
         price: 5000,
         stock: 10,
         category: 'placa_de_video',
-        img: 'https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_27832_Placa_de_Video_ASUS_GeForce_RTX_3090_24GB_GDDR6X_ROG_STRIX_GAMING_OC_6c3ef9d1-grn.jpg'
+        img: 'https://app.contabilium.com/files/explorer/7026/Productos-Servicios/concepto-5400681.jpg'
 
     }
     

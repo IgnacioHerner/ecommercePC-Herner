@@ -1,9 +1,10 @@
 .card_container {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 20%;
     border: 2px solid rgb(217, 217, 217);
     border-radius: 5%;
+    background: white;
 }
 
 .card_container:hover{
@@ -16,7 +17,7 @@
     font-weight: 600;
 
 }
-.img {  
+.img {      
     border-radius: 3px solid  ;
 }
 
