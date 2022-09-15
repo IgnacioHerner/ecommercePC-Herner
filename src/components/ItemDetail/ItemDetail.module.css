@@ -1,35 +1,30 @@
-.card_container {
+.detail {
     display: flex;
-    flex-direction: column;
-    width: 20%;
-    border: 2px solid rgb(217, 217, 217);
-    border-radius: 5%;
-    background: white;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
 }
 
-.card_container:hover{
-    border: 2px solid rgb(159, 159, 159);
-
+.detail img {
+    width: 400px;
+    border-radius: 8px;
 }
 
-.price {
-    color: rgb(25,163,25);
-    font-weight: 600;
-
-}
-.img {      
-    border-radius: 3px solid  ;
+.info {
+    padding: 0px 10px;
 }
 
-.stock{
-    color: black;
-    font-weight: 600;
-    font-size: 12px;
+.detail .info h2 {
+    font-size: 35px;
 }
-.h2{
-    display: flex;
-    align-items: center;
-    margin: 3rem;
+
+.detail .info p {
     font-size: 15px;
-    
+    line-height: 1.3;
+    font-weight: 300;
+    margin: 5px 0px 10px 0px;
+}
+
+.stock {
+    font-size: 22px;
 }

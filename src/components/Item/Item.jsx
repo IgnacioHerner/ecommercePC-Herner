@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Item = ({item}) => {
 
   const onAdd = () => {
-    console.log("Este boton sirve para agregar al carrito")
+
   }
   
   return (
