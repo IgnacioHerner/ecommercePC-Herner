@@ -1,0 +1,46 @@
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    background-color: white;
+}
+
+.btnRemove{
+    background-color: #333; 
+    border: none;
+    border-radius: 5%; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btnClear {
+    background-color: #333;
+    font-size: 20px;
+    color: white;
+    border: none;
+}
+
+.h2{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 100;
+    color: #1a1a1a;
+}
+
+.img{
+    width: 48px;
+    height: 48px;
+}
+
+.containerVacio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    flex-direction: column;
+}

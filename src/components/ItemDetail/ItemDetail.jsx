@@ -11,13 +11,14 @@ import style from './ItemDetail.module.css'
 const ItemDetail = ({item}) => {
 
   const [cantidad, setCantidad] = useState(0)
-  const {addToCart} = useContext(CartContext)
+  const {addToCart, getProductQuantity} = useContext(CartContext)
 
   const onAdd = (cantidad) => {
     setCantidad(cantidad)
     addToCart(item, cantidad);
-  }
+  };
 
+  const quantity = getProductQuantity(item.id)
 
   return (
     <div className={style.detail}>
@@ -25,14 +26,13 @@ const ItemDetail = ({item}) => {
       <div className={style.info}>
         <h2 className={style.h2}>{item.title}</h2>
         <p className={style.price}>$ {item.price}</p>
-        <p className={style.stock}>Stock: {item.stock}</p>
+        <p className={style.stock}>Stock disponible: {item.stock}</p>
 
         {cantidad === 0
-            ? (<ItemCount stock ={item.stock} initial={1} onAdd={onAdd}/>) 
+            ? (<ItemCount stock ={item.stock} initial={quantity} onAdd={onAdd}/>) 
             : (<Link to="/cart">Ir al carrito</Link>)
         }
       </div>
-
     </div>
   )
 }

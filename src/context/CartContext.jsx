@@ -30,9 +30,17 @@ const CartProvider = ({children}) => {
     // Agregar cantidad
     const addQty = (item, cantidad) => {
         const updateCart = cart.map((prod) =>
-            prod.id === item.id ? {...prod, qty: prod.cantidad + cantidad} : prod
+            prod.id === item.id 
+            ? {...prod, qty: cantidad} 
+            : prod
         );
         setCart(updateCart)
+    }
+
+    // Cuantos productos tengo en stock
+    const getProductQuantity = (id) => {
+        const product = cart.find((prod) => prod.id === id)
+        return product?.qty
     }
 
     // borrar producto
@@ -41,9 +49,24 @@ const CartProvider = ({children}) => {
         setCart(deleteItem)
     }
 
+    const totalPrice = () => {
+        let acumulador = 0
+        cart.forEach((prod) => {
+            acumulador = acumulador + (prod.price * prod.qty)
+        })
+        return acumulador
+    }
+
+    const totalProducts = () => {
+        let totalDeProductos = 0
+        cart.forEach((prod) => {
+            totalDeProductos = totalDeProductos + prod.qty
+        })
+    }
 
 
-    return  <CartContext.Provider value={{cart, clearCart, addToCart, removeItem }}>
+
+    return  <CartContext.Provider value={{cart, clearCart, addToCart, removeItem, getProductQuantity, totalPrice, totalProducts }}>
                 {children}
             </CartContext.Provider>
 }

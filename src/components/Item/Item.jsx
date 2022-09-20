@@ -17,7 +17,7 @@ const Item = ({item}) => {
           <h2 className={style.h2}>{item.title}</h2>
           <p className={style.price}>${item.price}</p>
           <p className={style.stock}>Stock: {item.stock}</p>
-          <button className={style.btn_carrito} onClick={onAdd}>Agregar al carrito</button>
+          <button className={style.btn_carrito} onClick={onAdd}>Ver detalles</button>
         </div>
       </Link>
     </div>
