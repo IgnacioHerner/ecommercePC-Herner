@@ -9,3 +9,45 @@
     font-size: 14px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+.btn_carrito:active {
+    background-color: #2f7832;
+    box-shadow: 0 3px rgb(85, 85, 85);
+    transform: translateY(4px);
+}
+
+.sumar{
+    background-color: #333; 
+    border: none;
+    border-radius: 5%; 
+    color: white;
+    padding: 8px 14px;
+    text-align: center;
+    margin: 10px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.sumar:active {
+    background-color: rgb(29, 28, 28);
+    transform: translateY(4px);
+}
+
+
+.restar{
+    background-color: #333; 
+    border: none;
+    border-radius: 5%; 
+    color: white;
+    padding: 8px 14px;
+    margin: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.restar:active {
+    background-color: rgb(29, 28, 28);
+    transform: translateY(4px);
+}

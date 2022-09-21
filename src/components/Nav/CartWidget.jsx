@@ -1,16 +1,17 @@
 import React from 'react'
+import style from './CartWidget.module.css'
 import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
 
 
 const CartWidget = () => {
 
-  const {totalProducts} = useContext(CartContext)
+  const {totalQuantity} = useContext(CartContext);
 
   return (
-    <div>
-      <span className="material-symbols-outlined">shopping_cart</span>
-      <span>{totalProducts() === 0 ? '' : totalProducts()}</span>
+    <div className={style.txtnone}>
+      <h2 className="material-symbols-outlined">shopping_cart </h2>
+      <span className={style.span}>{totalQuantity() === 0 ? ' ' : totalQuantity()}</span> 
     </div>
     
   )

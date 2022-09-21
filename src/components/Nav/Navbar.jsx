@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className={style.NavContainer}>
+    <nav className={style.NavContainer} >
 
         <Link className={style.txt_none} to="/">
           <h1 className={style.h1_ContainerNav}>House <span className={style.span_ContainerNav}>Bit</span> </h1>
@@ -19,7 +19,7 @@ const Navbar = () => {
           <Link className={style.a_ContainerNav} to="/">About</Link>
           <Link className={style.a_ContainerNav} to="/">Contact</Link> */}
         </div>
-        <Link to="/cart">
+        <Link className={style.txt_none} to="/cart">
           <CartWidget />
         </Link>
 

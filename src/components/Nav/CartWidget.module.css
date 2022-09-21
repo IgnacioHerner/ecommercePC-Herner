@@ -1,0 +1,11 @@
+.txtnone{
+    text-decoration: none;
+}
+
+.span{
+    position: relative;
+    bottom: 8px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
