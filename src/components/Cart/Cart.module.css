@@ -3,7 +3,7 @@
     max-width: 1200px;
     display: flex;
     justify-content: space-around;
-    padding: 8px;
+    padding: 2%;
     background-color: white;
 }
 
@@ -43,4 +43,25 @@
     align-items: center;
     margin-top: 15%;
     flex-direction: column;
+}
+
+.btn_eliminar{
+    background-color: #333; 
+    border: none;
+    border-radius: 5%; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 11px 22px;
+    margin-top: 5%;
+    font-size: 14px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.list_style{
+    list-style-type: none;
+}
+
+.price {
+    font-weight: 100;
 }
