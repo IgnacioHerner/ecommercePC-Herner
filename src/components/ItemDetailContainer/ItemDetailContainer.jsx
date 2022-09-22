@@ -1,9 +1,11 @@
 import React from 'react'
 import { useEffect , useState } from 'react'
 import ItemDetail from '../ItemDetail/ItemDetail'
-import { products } from '../../Mock/Products'
+// import { products } from '../../Mock/Products'
 import { useParams } from 'react-router-dom'
 import style from './ItemDetailContainer.module.css'
+import {db} from '../../firebaseConfig'
+import {getDoc, doc, collection} from 'firebase/firestore'
 
 const ItemDetailContainer = () => {
     const[item, setItem] = useState({})
@@ -11,24 +13,23 @@ const ItemDetailContainer = () => {
     const[isLoading, setIsLoading] = useState(true)
 
     const {idProd} = useParams();
-    const idProdNum = Number(idProd)
 
     useEffect(() => {
-       const getProduct = () => new Promise ((resolve, reject) => {
-            const unicoProducto = products.find((prod) => prod.id === idProdNum )
-                setTimeout(() =>{
-                    resolve(unicoProducto)
-                }, 400)
-            })
-       getProduct()
-       .then((data)=>{
-        setItem(data);
+      const itemCollection = collection(db, 'products');
+      const ref = doc(itemCollection, idProd);
+      getDoc(ref).then((res)=>{
+        setItem({
+          id: res.id,
+          ...res.data(),
+        })
+      })
+      .catch((error) =>{
+        console.log(error)
+      })
+      .finally(()=>{
         setIsLoading(false)
-       })
-       .catch((error)=>{
-        console.log(error);
-       })
-    }, [idProdNum]);
+      })
+    }, [idProd]);
 
 
   return (
@@ -51,3 +52,19 @@ const ItemDetailContainer = () => {
 }
 
 export default ItemDetailContainer
+
+
+// const getProduct = () => new Promise ((resolve, reject) => {
+//   const unicoProducto = products.find((prod) => prod.id === idProdNum )
+//       setTimeout(() =>{
+//           resolve(unicoProducto)
+//       }, 400)
+//   })
+// getProduct()
+// .then((data)=>{
+// setItem(data);
+// setIsLoading(false)
+// })
+// .catch((error)=>{
+// console.log(error);
+// })

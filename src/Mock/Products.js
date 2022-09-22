@@ -30,7 +30,7 @@ export const products = [
         id: 4,
         title: 'Memoria RAM Fury Beast DDR4 gamer color negro 8GB 1 Kingston',
         price: 100,
-        stock: 30,
+        stock: 20,
         category: 'ram',
         img: 'https://cf.shopee.com.ar/file/e423f0b82a6f966236bf6cf6b10ea5d3'
 
@@ -57,7 +57,7 @@ export const products = [
         id: 7,
         title: 'Placa de video Nvidia MSI Ventus GeForce RTX 30 Series RTX 3060 Ti GEFORCE RTX 3060 TI',
         price: 1500,
-        stock: 80,
+        stock: 15,
         category: 'placa_de_video',
         img: 'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/video-geforce-rtx-3060-ti-8gb-msi-ventus-3x-lhr-0.jpg'
 
