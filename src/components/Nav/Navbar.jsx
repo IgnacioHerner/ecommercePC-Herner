@@ -9,6 +9,7 @@ const Navbar = () => {
         <Link className={style.txt_none} to="/">
           <h1 className={style.h1_ContainerNav}>House <span className={style.span_ContainerNav}>Bit</span> </h1>
         </Link>
+
         
         <div>
           <Link className={style.a_ContainerNav} to="/category/ram">Memorias Ram</Link>
