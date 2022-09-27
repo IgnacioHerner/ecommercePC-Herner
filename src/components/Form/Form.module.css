@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 0 auto;
+    max-width: 1250px;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+.container_input {
+    margin: 2rem;
+}
+
+.form {
+    width: 460px;
+}
+
+
+.btn_enviar{
+    background-color: rgb(107, 164, 255); 
+    border: none;
+    border-radius: 5%; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 9px 19px;
+    font-size: 14px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn_enviar:hover{
+    background-color: rgb(69, 140, 253);
+}
+
+.btn_enviar:active{
+    background-color: rgb(69, 140, 253);
+    box-shadow: 0 3px rgb(85, 85, 85);
+    transform: translateY(4px);
+}

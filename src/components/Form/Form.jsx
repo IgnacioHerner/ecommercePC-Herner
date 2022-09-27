@@ -3,6 +3,7 @@ import { useState, useContext } from "react";
 import {addDoc, collection, serverTimestamp} from 'firebase/firestore'
 import {db} from '../../firebaseConfig'
 import { CartContext } from '../../context/CartContext'
+import style from './Form.module.css'
 
 const Form = () => {
 
@@ -62,39 +63,53 @@ const Form = () => {
   } 
 
   return (
-    <div>
-      <form action="" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Nombre..."
-          name="nombre"
-          value={nombre}
-          onChange={handleChangeNombre}
-        />
-        <input
-          type="text"
-          placeholder="Apellido..."
-          name="apellido"
-          value={apellido}
-          onChange={handleChangeApellido}
-        />
-        <input
-          type="text" 
-          placeholder="E-mail..."
-          name="email"
-          value={email}
-          onChange={handleChangeEmail}
-        />
-        <input
-          type="text" 
-          placeholder="Telefono..."
-          name="telefono"
-          value={telefono}
-          onChange={handleChangeTelefono}
-        />
+    <div className={style.container}>
+        <div>
+          <form className={style.container_form} action="" onSubmit={handleSubmit}>
+            <div className={style.container_input}>
+              <input
+                className={style.form}
+                type="text"
+                placeholder="Nombre..."
+                name="nombre"
+                value={nombre}
+                onChange={handleChangeNombre}
+              />
+            </div>
+            <div className={style.container_input}>
+              <input
+                className={style.form}
+                type="text"
+                placeholder="Apellido..."
+                name="apellido"
+                value={apellido}
+                onChange={handleChangeApellido}
+              />
+            </div>
+            <div className={style.container_input}>
+              <input
+                className={style.form}
+                type="text" 
+                placeholder="E-mail..."
+                name="email"
+                value={email}
+                onChange={handleChangeEmail}
+              />
+            </div>
 
-        <button>Enviar</button>
-      </form>
+            <div className={style.container_input}>
+              <input
+                className={style.form}
+                type="text" 
+                placeholder="Telefono..."
+                name="telefono"
+                value={telefono}
+                onChange={handleChangeTelefono}
+              />
+            </div>
+            <button className={style.btn_enviar}>Enviar</button>
+          </form>
+        </div>
     </div>
   );
 };

@@ -1,31 +1,31 @@
-.container{
+.bg_white{
+    background-color: white;
+    margin: 0 auto;
+    max-width: 1250px;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}   
+
+.containerCartItems{
     margin: 0 auto;
     max-width: 1200px;
     display: flex;
     justify-content: space-around;
     padding: 2%;
     background-color: white;
+    border: 2px solid rgb(227, 227, 227);
+    margin-bottom: 1rem;
 }
 
-.btnRemove{
-    background-color: #333; 
-    border: none;
-    border-radius: 5%; 
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 13px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-.btnClear {
-    background-color: #333;
-    font-size: 20px;
-    color: white;
-    border: none;
-}
 
 .h2{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 100;
+    color: #1a1a1a;
+}
+
+.h3{
     margin-top: 10px;
     font-size: 15px;
     font-weight: 100;
@@ -52,10 +52,19 @@
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 11px 22px;
-    margin-top: 5%;
+    padding: 9px 19px;
     font-size: 14px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn_eliminar:hover{
+    background-color: #1a1a1a;
+}
+
+.btn_eliminar:active{
+    background-color: #1a1a1a;
+    box-shadow: 0 3px rgb(85, 85, 85);
+    transform: translateY(4px);
 }
 
 .list_style{
@@ -63,5 +72,66 @@
 }
 
 .price {
+    margin-top: 10px;
     font-weight: 100;
+    color: #1a1a1a;
+    font-size: 15px;
+}
+
+.btn_clear {
+    background-color: #333; 
+    border: none;
+    border-radius: 5%; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 9px 19px;
+    font-size: 14px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn_clear:hover{
+    background-color: #1a1a1a;
+}
+
+.btn_clear:active{
+    background-color: #1a1a1a;
+    box-shadow: 0 3px rgb(85, 85, 85);
+    transform: translateY(4px);
+}
+
+.containerTotal{
+    justify-content: space-between;
+    display: flex; 
+    margin: 0 auto;
+    background-color:white ;
+    max-width: 1200px;
+    padding: 1rem;    
+}
+
+.form{
+    position: relative;
+    left: 1000px;
+}
+
+.btn_Continue{
+    background-color: rgb(107, 164, 255); 
+    border: none;
+    border-radius: 5%; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 9px 19px;
+    font-size: 14px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn_Continue:hover{
+    background-color: rgb(69, 140, 253);
+}
+
+.btn_Continue:active{
+    background-color: rgb(69, 140, 253);
+    box-shadow: 0 3px rgb(85, 85, 85);
+    transform: translateY(4px);
 }

@@ -1,4 +1,3 @@
-
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../context/CartContext'
@@ -21,28 +20,30 @@ const Cart = () => {
 
 
   return (
-    <div>
+    <div className={style.bg_white}>
       {cart.map((prod) => (
-        <div className={style.container} key={prod.id}>
+        <div className={`${style.containerCartItems} ${style.border}`} key={prod.id}>
           <img className={style.img} src={prod.img} alt={prod.title} />
           <h2 className={style.h2} >{prod.title}</h2>
-          <h3>Cantidad: {prod.qty}</h3>
+          <h3 className={style.h3}>Cantidad: {prod.qty}</h3>
           <h3 className={style.price}>${prod.price}.</h3>
+
           <ul className={style.list_style}>
-            <li className={style.li_btn_eliminar}>
+            <li>
                 <button className={style.btn_eliminar} onClick={() => removeItem(prod.id)}>Eliminar Producto</button>
             </li>
           </ul>
         </div>
       ))}
-      <div className={style.container}>
+      <div className={style.containerTotal}>
+          <button className={style.btn_clear} onClick={clearCart}> ClearCart</button>
         <h4 className={style.total}>Total: ${total}</h4>
-        <button className={style.btnClear} onClick={clearCart}> ClearCart</button>
       </div>
-      
-      <Link to="/form">
-        <button>Continuar con tu compra</button>
-      </Link>
+      <div className={style.form}>
+        <Link to="/form">
+          <button className={style.btn_Continue}>Continuar con tu compra</button>
+        </Link>
+      </div>
 
     </div>
   )
