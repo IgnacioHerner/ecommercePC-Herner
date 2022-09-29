@@ -26,8 +26,6 @@ git clone https://github.com/IgnacioHerner/ecommercePC-Herner.git
 
 `npm start`
 
-### GIF DE LA PAGINA
-
 
 
 
