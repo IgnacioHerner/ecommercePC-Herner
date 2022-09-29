@@ -27,6 +27,7 @@ git clone https://github.com/IgnacioHerner/ecommercePC-Herner.git
 `npm start`
 
 
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/89802155/193105415-64ab2c19-8912-4407-be3d-bee92fef3ff1.gif)
 
 
 
