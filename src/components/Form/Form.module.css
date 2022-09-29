@@ -1,23 +1,74 @@
-.container{
+.container_id_compra{
     display: flex;
     justify-content: center;
-    background-color: white;
+    align-items: center;
+    margin-top: 15%;
+    flex-direction: column;
+}
+
+.idCompra{
+    font-weight: 700;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
-    max-width: 1250px;
-    padding-top: 1%;
-    padding-bottom: 3%;
 }
 
-.container_input {
-    margin: 2rem;
+.wrapper{
+    max-width: 850px;
+    width: 100%;
+    background: #fff;
+    padding: 34px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
 }
 
-.form {
-    width: 460px;
+.wrapper h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
 }
 
+.wrapper h2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    border-radius: 12px;
+    background: #fff;
+    width: 28px;
+}
 
-.btn_enviar{
+.wrapper form {
+    margin-top: 30px;
+    margin: 18px 0;
+}
+
+.wrapper form .input_box{
+    height: 52px;
+    margin: 18px 0;
+}
+
+form .input_box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    border: 1.5px solid rgb(110, 110, 110);
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+}
+
+.btn_buy{
     background-color: rgb(107, 164, 255); 
     border: none;
     border-radius: 5%; 
@@ -25,15 +76,18 @@
     text-align: center;
     text-decoration: none;
     padding: 9px 19px;
+    width: 70%;
+    margin-top: 2rem;
+    margin-left: 16%;
     font-size: 14px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.btn_enviar:hover{
+.btn_buy:hover{
     background-color: rgb(69, 140, 253);
 }
 
-.btn_enviar:active{
+.btn_buy:active{
     background-color: rgb(69, 140, 253);
     box-shadow: 0 3px rgb(85, 85, 85);
     transform: translateY(4px);
